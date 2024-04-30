@@ -3,9 +3,10 @@ package com.example.payoo.retrofit
 
 import com.example.payoo.response.UserResponse
 import retrofit2.Call
-import retrofit2.http.*
-interface ApiServices {
-    @GET("/user")
-    fun getUserProfile(@Path("userId") userId: String): Call<UserResponse>
+import retrofit2.http.GET
+import retrofit2.http.Path
 
+interface ApiServices {
+    @GET("akun/{idUser}")
+    fun getUserProfile(@Path("idUser") userId: String): Call<UserResponse>
 }

@@ -13,6 +13,9 @@ data class UserResponseItem(
 	@field:SerializedName("idUser")
 	val idUser: String? = null,
 
+	@field:SerializedName("lastLogin")
+	val lastLogin: String? = null,
+
 	@field:SerializedName("password")
 	val password: String? = null,
 
