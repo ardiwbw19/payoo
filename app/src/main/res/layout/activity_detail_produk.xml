@@ -111,14 +111,6 @@
                         android:text="Rp. 25.000 (Offline)"
                         />
                     <TextView
-                        android:id="@+id/rgfe"
-                        android:textColor="#2E2E2E"
-                        android:textSize="16sp"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="tesss : "
-                        />
-                    <TextView
                         android:id="@+id/r5qa4pyl351m"
                         android:textColor="#2E2E2E"
                         android:textSize="16sp"

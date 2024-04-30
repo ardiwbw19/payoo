@@ -24,8 +24,6 @@ class MainActivity : AppCompatActivity() {
        binding.btnMenu.setOnClickListener {
             drawerLayout.openDrawer(binding.navMenu)
         }
-
-
         val navigationView: NavigationView = findViewById(R.id.nav_menu)
         navigationView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
@@ -37,7 +35,5 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
-
     }
 }
