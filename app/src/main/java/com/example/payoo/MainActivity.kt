@@ -36,4 +36,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+    fun tes(){
+
+    }
 }
