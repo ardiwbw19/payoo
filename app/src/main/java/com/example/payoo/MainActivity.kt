@@ -11,7 +11,6 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.Observer
 import com.example.payoo.databinding.ActivityMainBinding
 import com.example.payoo.response.UserResponse
-import com.example.payoo.response.UserResponseItem
 import com.example.payoo.retrofit.ApiConfig
 import com.google.android.material.navigation.NavigationView
 import retrofit2.Call
@@ -34,23 +33,21 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = binding.rvCard
 
         val apiService = ApiConfig.getApiService()
-        val userId = "1" // Ganti dengan ID pengguna yang sesuai
+        val userId = "1"
 
         apiService.getUserProfile(userId).enqueue(object : Callback<UserResponse> {
             override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
                 if (response.isSuccessful) {
                     val userResponse = response.body()
-                    val username = userResponse?.userResponse?.get(0)?.username
-                    binding.user.text = "Username: $username"
+                    val username = userResponse?.data?.username
+                    binding.user.text = "$username"
                     Toast.makeText(this@MainActivity, "Koneksi berhasil", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(this@MainActivity, "Koneksi anu", Toast.LENGTH_SHORT).show()
 
                 }
             }
-
             override fun onFailure(call: Call<UserResponse>, t: Throwable) {
-
                 Toast.makeText(this@MainActivity, "Koneksi gagal", Toast.LENGTH_SHORT).show()
             }
         })

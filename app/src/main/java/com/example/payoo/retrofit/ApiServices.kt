@@ -7,6 +7,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface ApiServices {
-    @GET("akun/{idUser}")
+    @GET("user/{idUser}")
     fun getUserProfile(@Path("idUser") userId: String): Call<UserResponse>
 }
