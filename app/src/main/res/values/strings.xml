@@ -7,29 +7,60 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="judul">StoryShare</string>
+    <string name="PwError">Kata Sandi Harus 8 karakter atau lebih</string>
+    <string name="diunggah">diunggah pada tanggal %1$s</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="location_permission">izinkan StoryShare Mendapatkan Lokasi Anda?</string>
+    <string name="message_welcome_page">Ingin berbagi tentang hidup, percintaan, atau pekerjaan? StoryShare Saja!</string>
+    <string name="title_welcome_page">Selamat datang di StoryShare!</string>
+    <string name="title_signup_page">lengkapi informasi di bawah ini terlebih dahulu</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="message_login_page">masukkan data Anda</string>
+    <string name="title_login_page">Ingin berbagi cerita Anda?</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">ayo bagikan cerita Anda</string>
+    <string name="greeting">Halo, %1$s,</string>
+    <string name="logout">Keluar</string>
+    <string name="password_length_warn">Kata Sandi harus memiliki setidaknya 8 karakter</string>
+    <string name="email_invalid_warn">Email Tidak Valid</string>
+    <string name="description">Deskripsi</string>
+    <string name="tittle">Judul</string>
+    <string name="created_at">Dibuat pada tanggal %1$s</string>
+    <string name="upload">Unggah</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="email_already_used">Email sudah digunakan</string>
+    <string name="email_must_valid">Email harus valid, \ncontoh: xxxxx@gmail.com</string>
+    <string name="name_field_should_fill">Kolom "nama" tidak boleh kosong</string>
+    <string name="password_field_should_fill">Kolom "kata sandi" tidak boleh kosong</string>
+    <string name="back">Kembali</string>
+    <string name="proceed">Lanjutkan</string>
+    <string name="account_created">Selamat %1$s! Akun Anda telah dibuat!</string>
+    <string name="oops">"Ups!"</string>
+    <string name="add_story_tittle">Tambahkan Cerita</string>
+    <string name="error_server">Server mengalami masalah teknis. Silakan coba lagi nanti</string>
+    <string name="logout_verification">Apakah Anda ingin Logout?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="logout_validation">Berhasil Logout</string>
+    <string name="login_validation">berhasil Login</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="timeout">Timeout</string>
+    <string name="retry">coba lagi</string>
+    <string name="change_language">ganti bahasa</string>
+    <string name="Produk">Produk</string>
 
+    <string name="Komposisi">Komposisi</string>
     <string-array
-
-        name="android_dropdown_arrays">
-
-        <item>Pilih</item>
-
-        <item>Apel</item>
-
-        <item>Jeruk</item>
-
-        <item>Pisang</item>
-
-        <item>Semangka</item>
-
-        <item>Melon</item>
-
-        <item>Rambutan</item>
-
-        <item>Anggur</item>
-
+        name="list_jenis_usaha">
+        <item>Makanan</item>
+        <item>Minuman</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

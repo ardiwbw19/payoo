@@ -89,7 +89,7 @@
         android:fontFamily="@font/quicksand_bold"
         android:gravity="center"
         android:shadowColor="@color/black"
-        android:text="MASUK"
+        android:text="Simpan"
         android:textColor="@android:color/white"/>
 
 </RelativeLayout>

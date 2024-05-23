@@ -116,7 +116,7 @@ android:padding="35dp"
         android:id="@+id/spinner_kategori"
         android:layout_width="334dp"
         android:layout_height="60dp"
-        android:entries="@array/android_dropdown_arrays"
+
         android:layout_gravity="center"
         />
 </LinearLayout>
@@ -167,7 +167,7 @@ android:padding="35dp"
                     android:id="@+id/spinner_komposisi"
                     android:layout_width="334dp"
                     android:layout_height="60dp"
-                    android:entries="@array/android_dropdown_arrays"
+
                     android:layout_gravity="center"
                     />
             </LinearLayout>

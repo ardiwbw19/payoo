@@ -31,5 +31,10 @@
            android:iconTint="@color/Utama"
            android:title="Tentang Payoo"
            />
+       <item android:id="@+id/menu_logout"
+           android:icon="@drawable/logout_icon"
+           android:iconTint="@color/Utama"
+           android:title="Logout"
+           />
    </group>
 </menu>

@@ -6,8 +6,15 @@
     android:layout_height="match_parent"
     android:background="@color/Utama"
     tools:context=".ui.authentication.LoginActivity">
-
-
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progresindicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <ImageView
         android:id="@+id/imageViewCircleGradient"
         android:layout_width="700dp"
@@ -23,9 +30,9 @@
 
     <ImageView
         android:id="@+id/imageViewCircle"
-        android:layout_width="800dp"
-        android:layout_height="800dp"
-        android:layout_marginTop="150dp"
+        android:layout_width="669dp"
+        android:layout_height="669dp"
+        android:layout_marginTop="216dp"
         android:src="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,7 +105,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/circularButton"
+        android:id="@+id/btn_login"
         android:layout_width="280dp"
         android:textSize="14dp"
         android:layout_height="50dp"
@@ -112,7 +119,9 @@
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/et_pw"
         app:layout_constraintStart_toStartOf="@+id/et_pw"
-        app:layout_constraintTop_toBottomOf="@+id/et_pw" />
+        app:layout_constraintTop_toBottomOf="@+id/et_pw"
+        android:clickable="true"
+        />
 
     <LinearLayout
         android:id="@+id/btn_google"
@@ -125,9 +134,9 @@
         android:orientation="horizontal"
         android:paddingVertical="12dp"
         android:clickable="true"
-        app:layout_constraintEnd_toEndOf="@+id/circularButton"
-        app:layout_constraintStart_toStartOf="@+id/circularButton"
-        app:layout_constraintTop_toBottomOf="@+id/circularButton">
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login">
 
         <ImageView
             android:id="@+id/google"
