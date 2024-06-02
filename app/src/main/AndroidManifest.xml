@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,28 +20,46 @@
         android:theme="@style/Theme.Payoo"
         tools:targetApi="31">
         <activity
+            android:name=".ui.view.transaksi.TransaksiBerhasilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.transaksi.KeranjangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.transaksi.TransaksiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ui.view.toko.InformasiTokoActivity"
             android:exported="false" />
         <activity
-            android:name=".TambahProdukBaruActivity"
+            android:name=".ui.view.produk.TambahProdukBaruActivity"
             android:exported="false" />
         <activity
-            android:name=".Menu3Activity"
+            android:name=".ui.view.main.Menu3Activity"
             android:exported="false" />
         <activity
-            android:name=".TambahStokActivity"
+            android:name=".ui.view.stok.TambahStokActivity"
             android:exported="false" />
         <activity
-            android:name=".ManajemenStok2Activity"
+            android:name=".ui.view.stok.ManajemenStok2Activity"
             android:exported="false" />
         <activity
-            android:name=".ManajemenStokActivity"
+            android:name=".ui.view.stok.ManajemenStokActivity"
             android:exported="false" />
         <activity
-            android:name=".TambahKomposisiActivity"
+            android:name=".ui.view.komposisi.TambahKomposisiActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailKomposisiActivity"
+            android:name=".ui.view.komposisi.DetailKomposisiActivity"
             android:exported="false" />
         <activity
             android:name=".ui.view.komposisi.KomposisiProdukActivity"
@@ -46,10 +68,10 @@
             android:name=".ui.view.produk.DetailProdukActivity"
             android:exported="false" />
         <activity
-            android:name=".TambahProdukActivity"
+            android:name=".ui.view.produk.TambahProdukActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".ui.view.main.MainActivity2"
             android:exported="false" />
         <activity
             android:name=".NavigationActivity"
@@ -57,21 +79,25 @@
             android:label="@string/title_activity_navigation"
             android:theme="@style/Theme.Payoo.NoActionBar" />
         <activity
-            android:name=".ui.authentication.RegistrationActivity"
+            android:name=".ui.view.authentication.RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.authentication.LoginActivity"
+            android:name=".ui.view.authentication.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.view.main.MainActivity"
             android:exported="true"
-            tools:ignore="DuplicateActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            tools:ignore="DuplicateActivity" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>

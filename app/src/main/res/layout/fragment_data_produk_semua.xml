@@ -1,132 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.view.semua.DataProdukSemua">
+    tools:context=".ui.view.semua.DataProdukSemua"
+    >
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/back"
+        android:outlineSpotShadowColor="@color/Utama"
+        >
+        <TextView
+            android:id="@+id/toolbar_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Data Produk"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/quicksand_bold" />
+    </androidx.appcompat.widget.Toolbar>
     <LinearLayout
-        android:id="@+id/header_layout"
+        android:id="@+id/rj6hyrhh95e"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFFFF"
-        android:elevation="10dp"
-        android:orientation="vertical"
-        android:paddingHorizontal="20dp"
-        android:paddingTop="23dp"
-        android:paddingBottom="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:id="@+id/header_dat_produk"
-            android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        >
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            app:iconifiedByDefault="false"
+            app:queryHint="Cari produk (nama)"
+            app:searchIcon="@drawable/search"
+            app:theme="@style/CustomSearchView"
+            android:background="@drawable/rounded_edit_text"
+            />
 
-            <ImageView
-                android:id="@+id/back"
-                android:layout_width="8dp"
-                android:layout_height="17dp"
-                android:layout_marginEnd="94dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/back" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-            <TextView
-                android:id="@+id/rcl1htx97wyo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Data Produk"
-                android:textColor="#2E2E2E"
-                android:textSize="18sp" />
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/barcode"
+            android:layout_width="19dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/barcode" />
 
-        <LinearLayout
-            android:id="@+id/rj6hyrhh95e"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-            <LinearLayout
-                android:id="@+id/r59x3hl3ce83"
-                android:layout_width="221dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/cr50bfff9f8f9"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:paddingVertical="10dp">
+        <ImageView
+            android:id="@+id/sort"
+            android:layout_width="19dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sort" />
 
-                <ImageView
-                    android:id="@+id/rmy3z8yzvwkc"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginEnd="10dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/search" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-                <TextView
-                    android:id="@+id/r0xs382w2k04n"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="cari produk (kode | nama)"
-                    android:textColor="#959595"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:id="@+id/barcode"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/barcode" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:id="@+id/sort"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/sort" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:id="@+id/filter"
-                android:layout_width="20dp"
-                android:layout_height="19dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/filter" />
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="20dp"
+            android:layout_height="19dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/filter" />
     </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_company"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header_layout"
-        app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/card_data_produk"
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Kedua"
         />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_company_semua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/card_data_produk" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+
+
+</LinearLayout>

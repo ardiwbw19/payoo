@@ -6,9 +6,27 @@
         <item name="android:textColor">@color/black</item> <!-- Menyesuaikan warna teks -->
         <item name="fontFamily">@font/quicksand_semibold</item>
     </style>
-
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/white</item>
+    </style>
+    <style name="CustomButtonStyle2" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/dipilih</item>
+    </style>
     <style name="SpinnerTextStyle" parent="@android:style/Widget.Spinner">
         <item name="android:fontFamily">@font/quicksand_semibold</item>
+    </style>
+
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="queryBackground">@color/white</item>
+        <item name="android:textSize">12dp</item>
+        <item name="searchIcon">@drawable/search</item> <!-- Ikon custom untuk search -->
+<!--        <item name="closeIcon">@drawable/ic_custom_close_icon</item> &lt;!&ndash; Ikon custom untuk close &ndash;&gt;-->
+<!--        <item name="goIcon">@drawable/ic_custom_go_icon</item> &lt;!&ndash; Ikon custom untuk go &ndash;&gt;-->
+<!--        <item name="voiceIcon">@drawable/ic_custom_voice_icon</item> &lt;!&ndash; Ikon custom untuk voice &ndash;&gt;-->
+      <item name="android:fontFamily">@font/quicksand</item>
+        <item name="submitBackground">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+
     </style>
 
 </resources>

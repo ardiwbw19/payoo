@@ -54,8 +54,7 @@
     <string name="Produk">Produk</string>
 
     <string name="Komposisi">Komposisi</string>
-    <string-array
-        name="list_jenis_usaha">
+    <string-array name="list_jenis_usaha">
         <item>Makanan</item>
         <item>Minuman</item>
     </string-array>

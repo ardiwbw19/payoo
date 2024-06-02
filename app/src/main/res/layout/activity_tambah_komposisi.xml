@@ -6,42 +6,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TambahKomposisiActivity">
+    tools:context=".ui.view.komposisi.TambahKomposisiActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/r0nj4xwdcktl"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="34dp"
-            android:background="#FFFFFFFF"
-            android:elevation="10dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingHorizontal="25dp"
-            android:paddingVertical="23dp">
-
-            <ImageView
-                android:id="@+id/rrj344x2iwyk"
-                android:layout_width="8dp"
-                android:layout_height="17dp"
-                android:layout_marginEnd="65dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/back" />
-
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:elevation="4dp"
+            app:navigationIcon="@drawable/back"
+            android:outlineSpotShadowColor="@color/Utama"
+            >
             <TextView
-                android:id="@+id/rims8yhn4a9g"
-                android:layout_width="match_parent"
+                android:id="@+id/toolbar_judul"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_gravity="center"
                 android:text="Tambah Komposisi"
-                android:textColor="#2E2E2E"
-                android:textSize="18sp" />
-        </LinearLayout>
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/quicksand_bold" />
+        </androidx.appcompat.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Kedua"
+            android:layout_marginBottom="36dp"
+            />
         <EditText
             android:id="@+id/et_nama_komposisi"
             android:layout_width="280dp"
@@ -79,7 +75,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/circularButton"
+        android:id="@+id/simpan"
         android:layout_width="280dp"
         android:textSize="14dp"
         android:layout_height="50dp"
