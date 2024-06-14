@@ -20,6 +20,15 @@
         android:theme="@style/Theme.Payoo"
         tools:targetApi="31">
         <activity
+            android:name=".ui.view.laporan.DetailPenjualanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.laporan.RiwayatTransaksiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.laporan.LaporanUtamaActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.view.transaksi.TransaksiBerhasilActivity"
             android:exported="false" />
         <activity

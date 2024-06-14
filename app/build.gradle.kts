@@ -47,6 +47,7 @@ dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.exifinterface:exifinterface:1.3.7")
     implementation("androidx.compose.ui:ui-test-android:1.6.7")
+    implementation("com.google.ai.client.generativeai:generativeai:0.7.0")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
     testImplementation("org.mockito:mockito-core:5.5.0")
     testImplementation("org.mockito:mockito-inline:5.2.0")
@@ -82,4 +83,6 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+
 }

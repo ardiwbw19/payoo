@@ -5,7 +5,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progresindicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -34,7 +42,7 @@
 
     <ScrollView
         android:id="@+id/r3pcksev2m7q"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="#FFFFFFFF"
@@ -128,7 +136,7 @@
                     android:id="@+id/rgfek8su"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Harga produk : "
+                    android:text="Komposisi : "
                     android:textColor="#2E2E2E"
                     android:textSize="16sp" />
 
@@ -158,46 +166,28 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:id="@+id/rql7e9l6wqpa"
-                    android:layout_width="136dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_edit_text"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingVertical="21dp">
-
-                    <TextView
-                        android:id="@+id/r1l8omhg50z3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Edit produk"
-                        android:textColor="#2FA36B"
-                        android:textSize="12sp" />
-                </LinearLayout>
-
-                <View
+                <Button
+                    android:id="@+id/btn_edit"
                     android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-
-                <LinearLayout
-                    android:id="@+id/rg27ctf3jlh"
-                    android:layout_width="136dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_edit_text"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingVertical="21dp">
+                    android:layout_weight="1"
+                    android:text="Edit"
 
-                    <TextView
-                        android:id="@+id/r6j4vde2pa6c"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Hapus produk"
-                        android:textColor="#959595"
-                        android:textSize="12sp" />
-                </LinearLayout>
+                    android:background="@drawable/buttond_background_gray"
+                    android:textColor="@color/Utama"
+                    style="@style/CustomButtonStyle2"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btn_hapus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hapus"
+                    android:textColorHint="@color/Textab"
+                    style="@style/CustomButtonStyle2"
+                    android:background="@drawable/buttond_background_gray"
+                    android:textColor="#FFFFFF" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

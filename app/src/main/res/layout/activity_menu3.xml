@@ -12,18 +12,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <ImageView
-            android:id="@+id/btn_menu"
-            android:clickable="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/menu"
-            android:layout_marginTop="24dp"
-            android:layout_marginLeft="26dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="NotSibling" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -111,7 +99,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
-                    android:drawableLeft="@drawable/sementara"
+                    android:drawableLeft="@drawable/icon_komposisi"
                     android:text="Komposisi Produk "
                     android:textColor="#2E2E2E"
                     android:textSize="14sp" />
@@ -134,7 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
-                    android:drawableLeft="@drawable/sementara"
+                    android:drawableLeft="@drawable/icon_kategori_produk"
                     android:text="Kategori Produk "
                     android:textColor="#2E2E2E"
                     android:textSize="14sp" />
@@ -157,7 +145,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
-                    android:drawableLeft="@drawable/sementara"
+                    android:drawableLeft="@drawable/icon_manajemen_stok"
                     android:text="Manajemen Stok "
                     android:textColor="#2E2E2E"
                     android:textSize="14sp" />
@@ -188,16 +176,4 @@
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_menu3"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/header"
-        app:itemTextAppearance="@style/MyNavigationViewText"
-        app:itemIconPadding="8dp"
-        app:itemIconTint="@color/Utama"
-        app:itemVerticalPadding="21dp"
-        app:menu="@menu/main_menu"
-        tools:ignore="MissingConstraints" />
 </androidx.drawerlayout.widget.DrawerLayout>
